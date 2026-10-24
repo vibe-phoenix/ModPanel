@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "modtools",
+  "name": "ModTools",
+  "description": "A fast floating custom shelf for Maya with pie menus, hot buttons, search and per-workspace panels.",
+  "overview": "ModPanel opens under your cursor with your own command buttons, hold-to-open pie menus, hot buttons and search. It switches panels automatically for UV Editing and Hypershade, and comes in a dark ModPanel style or the original Classic style.",
+  "version": "1.0",
+  "assets": {
+    "banner": "ModTools_banner.png"
+  },
+  "content": {
+    "readme": "README.md",
+    "features": "FEATURES.md"
+  },
+  "sourceDirectory": "files",
+  "targets": [
+    {
+      "app": "maya",
+      "os": "windows",
+      "supportedVersions": ["2024", "2025", "2026", "2027"],
+      "install": [
+        { "action": "mkdir", "destination": "${paths.userScripts}/phoenix_panel" },
+        { "action": "copy", "source": "__init__.py", "destination": "${paths.userScripts}/phoenix_panel/__init__.py" },
+        { "action": "copy", "source": "core.py", "destination": "${paths.userScripts}/phoenix_panel/core.py" },
+        { "action": "copy", "source": "free_stuff.py", "destination": "${paths.userScripts}/phoenix_panel/free_stuff.py" },
+        { "action": "copy", "source": "launcher.py", "destination": "${paths.userScripts}/phoenix_panel/launcher.py" },
+        { "action": "copy", "source": "loader.py", "destination": "${paths.userScripts}/phoenix_panel/loader.py" },
+        { "action": "copy", "source": "pie_editor.py", "destination": "${paths.userScripts}/phoenix_panel/pie_editor.py" },
+        { "action": "copy", "source": "settings.py", "destination": "${paths.userScripts}/phoenix_panel/settings.py" },
+        { "action": "copy", "source": "shelf_picker.py", "destination": "${paths.userScripts}/phoenix_panel/shelf_picker.py" },
+        { "action": "copy", "source": "theme.py", "destination": "${paths.userScripts}/phoenix_panel/theme.py" },
+        { "action": "copy", "source": "utils.py", "destination": "${paths.userScripts}/phoenix_panel/utils.py" },
+        { "action": "copy", "source": "widgets.py", "destination": "${paths.userScripts}/phoenix_panel/widgets.py" },
+        { "action": "mkdir", "destination": "C:/NexusTools/icons" },
+        { "action": "copy", "source": "ModTools.png", "destination": "C:/NexusTools/icons/ModTools.png" },
+        { "action": "mkdir", "destination": "${paths.userPrefs}/shelves" },
+        { "action": "copy", "source": "shelf_ModTools.mel", "destination": "${paths.userPrefs}/shelves/shelf_ModTools.mel" }
+        
+          
+        
+      ]
+    }
+  ]
+}
