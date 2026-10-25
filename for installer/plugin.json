@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "modtools",
-  "name": "ModPanel",
+  "name": "ModTools",
   "description": "A fast floating custom shelf for Maya with pie menus, hot buttons, search and per-workspace panels.",
   "overview": "ModPanel opens under your cursor with your own command buttons, hold-to-open pie menus, hot buttons and search. It switches panels automatically for UV Editing and Hypershade, and comes in a dark ModPanel style or the original Classic style.",
   "version": "1.0.1",
